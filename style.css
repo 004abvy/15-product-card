@@ -1,0 +1,71 @@
+.product-card {
+  border: 2px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  height: 400px;
+  padding: 40px 30px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 30px rgba(153, 12, 196, 0.8);
+  text-align: center;
+  display: block;
+  margin: 100px auto; /* Center horizontally */
+  width: 400px; /* Fixed width for desktop */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(118, 21, 163);
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.product-image:hover {
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgb(118, 21, 163);
+  border-radius: 50px;
+}
+
+.buy-btn {
+  background-color: rgb(170, 24, 141);
+  border-width: 4px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: rgb(207, 255, 16);
+  padding: 10px 15px;
+  text-decoration: underline;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.buy-btn:active {
+  background-color: rgb(207, 255, 16);
+  color: rgb(0, 34, 255);
+  box-shadow: none;
+}
+
+.product-price {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.product-description {
+  font-style: italic;
+}
+
+/* Hover hiding logic (if still needed) */
+.product-image:hover ~ .product-info,
+.product-image:hover ~ .product-name,
+.product-image:hover ~ .product-description,
+.product-image:hover ~ .buy-btn {
+  visibility: hidden;
+}
